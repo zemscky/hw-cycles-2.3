@@ -3,14 +3,14 @@ public class Main {
         // Домашняя работа 3.2
         // Задание 1
         System.out.println("Задание 1");
-        int cometYears = 0;
-        int lastYears = 1822; //  год за 200 лет до текущего
-        int futureYears = 2122; // 100 лет после, в качестве завершения периода расчета
-        while (cometYears < 2122) {
-            if (cometYears >= 1822) {
-                System.out.println(cometYears + " - год комета пролетала рядом с Землей");
+        int currentYear = 2022;
+        int startPeriod = currentYear - 200;
+        int endPeriod = currentYear + 100;
+        int theCometWillFlyBy = 79;
+        for (int i = startPeriod; i <= endPeriod; i++) {
+            if (i % theCometWillFlyBy == 0) {
+                System.out.println(i);
             }
-            cometYears += 79;
         }
         // Задание 2
         System.out.println("Задание 2");
